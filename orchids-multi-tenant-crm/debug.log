@@ -1,0 +1,308 @@
+2026-02-04T08:00:36.948Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <ScrollAndFocusHandler segmentPath={[...]}>
+      <InnerScrollAndFocusHandler segmentPath={[...]} focusAndScrollRef={{apply:false, ...}}>
+        <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+          <LoadingBoundary loading={null}>
+            <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+                    <SegmentViewNode type="page" pagePath="/orchids-p...">
+                      <SegmentTrieNode>
+                      <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+                        <CompaniesPage params={Promise} searchParams={Promise}>
+                          <AppSidebar data-orchids-id="src/app/co..." data-orchids-name="AppSidebar">
+                            <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex h-scr...">
+                              <aside data-orchids-id="src/compon..." data-orchids-name="aside" className="flex flex-...">
+                                <div>
+                                <nav>
+                                <div data-orchids-id="src/compon..." data-orchids-name="div" className="border-t b...">
+                                  <LinkComponent>
+                                  <LinkComponent>
+                                  <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex items...">
+                                    ...
+                                      <AvatarProvider scope={undefined} imageLoadingStatus="idle" ...>
+                                        <Primitive.span data-orchids-id="src/compon..." data-orchids-name="Avatar" ...>
+                                          <span
+                                            data-orchids-id="src/components/app-sidebar.tsx:98:12"
+                                            data-orchids-name="Avatar"
+                                            data-slot="avatar"
+                                            className="relative flex size-8 shrink-0 overflow-hidden rounded-full h-9 w-9"
+                                            ref={null}
+-                                           data-orchid-ref="ref-osnf2n79lv"
+                                          >
+                                            <AvatarFallback data-orchids-id="src/compon..." ...>
+                                              <AvatarFallback data-orchids-id="src/compon..." ...>
+                                                <Primitive.span data-orchids-id="src/compon..." ...>
+                                                  <span
+                                                    data-orchids-id="src/components/app-sidebar.tsx:99:14"
+                                                    data-orchids-name="AvatarFallback"
+                                                    data-slot="avatar-fallback"
+                                                    className="flex size-full items-center justify-center rounded-full..."
+                                                    ref={null}
+-... [truncated]
+2026-02-04T08:00:38.691Z [console][error] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+2026-02-04T08:00:38.692Z [console][error] Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+2026-02-04T08:00:42.017Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T08:00:42.055Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T08:01:06.843Z [console][error] GoTrueClient@sb-skulrnhjbxnahwzdyoir-auth-token:1 (2.90.1) 2026-02-04T08:01:06.843Z Multiple GoTrueClient instances detected in the same browser context. It is not an error, but this should be avoided as it may produce undefined behavior when used concurrently under the same storage key.
+2026-02-04T08:01:10.356Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+              <SegmentViewNode type="page" pagePath="/orchids-p...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+                  <CompaniesPage params={Promise} searchParams={Promise}>
+                    <AppSidebar data-orchids-id="src/app/co..." data-orchids-name="AppSidebar">
+                      <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex h-scr...">
+                        <aside>
+                        <main data-orchids-id="src/compon..." data-orchids-name="main" className="flex-1 ove...">
+                          <div data-orchids-id="src/app/co..." data-orchids-name="div" className="p-6 space-y-6">
+                            <div>
+                            <div data-orchids-id="src/app/co..." data-orchids-name="div" className="grid gap-4...">
+                              <Card>
+                              <Card>
+                              <Card>
+                              <Card data-orchids-id="src/app/co..." data-orchids-name="Card" className="p-4">
+                                <div data-orchids-id="src/app/co..." data-orchids-name="Card" data-slot="card" ...>
+                                  <div data-orchids-id="src/app/co..." data-orchids-name="div" className="flex items...">
+                                    <div data-orchids-id="src/app/co..." data-orchids-name="div" ...>
+                                      <FileText data-orchids-id="src/app/co..." data-orchids-name="FileText" ...>
+                                        <svg
+                                          ref={null}
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          width={24}
+                                          height={24}
+                                          viewBox="0 0 24 24"
+                                          fill="none"
+                                          stroke="currentColor"
+                                          strokeWidth={2}
+                                          strokeLinecap="round"
+                                          strokeLinejoin="round"
+                                          className="lucide lucide-file-text h-5 w-5 text-amber-500"
+                                          aria-hidden="true"
+                                          data-orchids-id="src/app/companies/page.tsx:474:16"
+                                          data-orchids-name="FileText"
+-                                         data-orchid-ref="ref-upxhhoflxl"
+                                        >
+                                          <path
+                                            d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.5..."
+-                                           data-orchid-ref="ref-flv9aubljm"
+                                          >
+                                   ... [truncated]
+2026-02-04T08:01:11.347Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T08:01:11.351Z [console][error] Uncaught (in promise) SyntaxError: Unexpected end of JSON input
+2026-02-04T08:01:11.375Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T08:01:10.356Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+              <SegmentViewNode type="page" pagePath="/orchids-p...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+                  <CompaniesPage params={Promise} searchParams={Promise}>
+                    <AppSidebar data-orchids-id="src/app/co..." data-orchids-name="AppSidebar">
+                      <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex h-scr...">
+                        <aside>
+                        <main data-orchids-id="src/compon..." data-orchids-name="main" className="flex-1 ove...">
+                          <div data-orchids-id="src/app/co..." data-orchids-name="div" className="p-6 space-y-6">
+                            <div>
+                            <div data-orchids-id="src/app/co..." data-orchids-name="div" className="grid gap-4...">
+                              <Card>
+                              <Card>
+                     ...
+2026-02-04T12:06:29.054Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T12:06:39.025Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+              <SegmentViewNode type="page" pagePath="/orchids-p...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+                  <CompaniesPage params={Promise} searchParams={Promise}>
+                    <AppSidebar data-orchids-id="src/app/co..." data-orchids-name="AppSidebar">
+                      <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex h-scr...">
+                        <aside>
+                        <main data-orchids-id="src/compon..." data-orchids-name="main" className="flex-1 ove...">
+                          <div data-orchids-id="src/app/co..." data-orchids-name="div" className="p-6 space-y-6">
+                            <div>
+                            <div data-orchids-id="src/app/co..." data-orchids-name="div" className="grid gap-4...">
+                              <Card data-orchids-id="src/app/co..." data-orchids-name="Card" className="p-4">
+                                <div data-orchids-id="src/app/co..." data-orchids-name="Card" data-slot="card" ...>
+                                  <div data-orchids-id="src/app/co..." data-orchids-name="div" className="flex items...">
+                                    <div data-orchids-id="src/app/co..." data-orchids-name="div" ...>
+                                      <Building2 data-orchids-id="src/app/co..." data-orchids-name="Building2" ...>
+                                        <svg ref={null} xmlns="http://www..." width={24} height={24} viewBox="0 0 24 24" ...>
+                                          <path
+                                            d="M10 12h4"
+-                                           data-orchid-ref="ref-jr2zch6s56"
+                                          >
+                                          <path
+                                            d="M10 8h4"
+-                                           data-orchid-ref="ref-i3rouxndnk"
+                                          >
+                                          <path
+                                            d="M14 21v-3a2 2 0 0 0-4 0v3"
+-                                           data-orchid-ref="ref-nogmydvboj"
+                                          >
+                                          <path
+                                            d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"
+-                                           data-orchid-ref="ref-wgc46jdyjn"
+                                          >
+                                          <path
+                                            d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"
+-                                           data-orchid-ref="ref-1kc6iqkq9u"
+                                          >
+                                    <div
+                                      data-orchids-id="src/app/companies/page.tsx:443:14"
+                             ... [truncated]
+2026-02-04T12:06:39.757Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T12:06:39.767Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T12:06:39.793Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T12:07:14.092Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+              <SegmentViewNode type="page" pagePath="/orchids-p...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+                  <CompaniesPage params={Promise} searchParams={Promise}>
+                    <AppSidebar data-orchids-id="src/app/co..." data-orchids-name="AppSidebar">
+                      <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex h-scr...">
+                        <aside>
+                        <main data-orchids-id="src/compon..." data-orchids-name="main" className="flex-1 ove...">
+                          <div data-orchids-id="src/app/co..." data-orchids-name="div" className="p-6 space-y-6">
+                            <div>
+                            <div data-orchids-id="src/app/co..." data-orchids-name="div" className="grid gap-4...">
+                              <Card>
+                              <Card data-orchids-id="src/app/co..." data-orchids-name="Card" className="p-4">
+                                <div data-orchids-id="src/app/co..." data-orchids-name="Card" data-slot="card" ...>
+                                  <div data-orchids-id="src/app/co..." data-orchids-name="div" className="flex items...">
+                                    <div data-orchids-id="src/app/co..." data-orchids-name="div" ...>
+                                      <DollarSign data-orchids-id="src/app/co..." data-orchids-name="DollarSign" ...>
+                                        <svg ref={null} xmlns="http://www..." width={24} height={24} viewBox="0 0 24 24" ...>
+                                          <line>
+                                          <path
+                                            d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+-                                           data-orchid-ref="ref-5exoda40mz"
+                                          >
+                                    <div
+                                      data-orchids-id="src/app/companies/page.tsx:454:14"
+                                      data-orchids-name="div"
+-                                     data-orchid-ref="ref-sjvlzx5kiq"
+                                    >
+                                      <p
+                                        data-orchids-id="src/app/companies/page.tsx:455:16"
+                                        data-orchids-name="p"
+                                        className="text-2xl font-bold"
+-                                       data-orchid-ref="ref-sd9g59bf0d"
+                                      >
+                                      <p
+                                        data-orchids-id="src/app/companies/page.tsx:456:16"
+                                        data-orchids-name="p"
+                                        className="text-sm text-muted-foreground"
+-                                       data-orchid-ref="ref-zm3n2gj6mv"
+                 ... [truncated]
+2026-02-04T12:07:14.674Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T12:07:14.679Z [console][error] Uncaught (in promise) SyntaxError: Unexpected end of JSON input
+2026-02-04T12:07:14.708Z [console][error] Uncaught (in promise) SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+2026-02-04T12:07:14.092Z [console][error] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <LoadingBoundary loading={null}>
+      <HTTPAccessFallbackBoundary notFound={undefined} forbidden={undefined} unauthorized={undefined}>
+        <RedirectBoundary>
+          <RedirectErrorBoundary router={{...}}>
+            <InnerLayoutRouter url="/companies" tree={[...]} cacheNode={{lazyData:null, ...}} segmentPath={[...]}>
+              <SegmentViewNode type="page" pagePath="/orchids-p...">
+                <SegmentTrieNode>
+                <ClientPageRoot Component={function CompaniesPage} searchParams={{}} params={{}}>
+                  <CompaniesPage params={Promise} searchParams={Promise}>
+                    <AppSidebar data-orchids-id="src/app/co..." data-orchids-name="AppSidebar">
+                      <div data-orchids-id="src/compon..." data-orchids-name="div" className="flex h-scr...">
+                        <aside>
+                        <main data-orchids-id="src/compon..." data-orchids-name="main" className="flex-1 ove...">
+                          <div data-orchids-id="src/app/co..." data-orchids-name="div" className="p-6 space-y-6">
+                            <div>
+                            <div data-orchids-id="src/app/co..." data-orchids-name="div" className="grid gap-4...">
+                              <Card>
+                              <Card data-orchids-id="src/a...
